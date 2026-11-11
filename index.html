@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0000ff">
+  <meta name="description" content="Discover useful products across electronics, automotive, home appliances, health, and pet categories.">
+  <title>Affiliate Store | Discover Useful Products</title>
+  <link rel="icon" href="images/logo.png" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <header class="site-header">
+    <div class="logo-container" aria-label="Affiliate Store logo">
+      <a class="brand-link" href="index.html">
+        <img src="images/logo.png" alt="" class="profile-img" width="88" height="88">
+      </a>
+    </div>
+    <div class="header-copy">
+      <p class="header-kicker">YOUR EVERYDAY PRODUCT GUIDE</p>
+      <h1>AFFILIATE STORE</h1>
+      <p class="note">Discover useful products for everyday life.</p>
+      <nav class="social-icons" aria-label="Follow Affiliate Store on social media">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><img src="icons/facebook.svg" alt=""></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><img src="icons/instagram.svg" alt=""></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><img src="icons/tiktok.svg" alt=""></a>
+        <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer" aria-label="Snapchat" title="Snapchat"><img src="icons/snapchat.svg" alt=""></a>
+        <a href="https://www.threads.net/" target="_blank" rel="noopener noreferrer" aria-label="Threads" title="Threads"><img src="icons/threads.svg" alt=""></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><img src="icons/twitter.svg" alt=""></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-row" role="search" aria-label="Search products">
+      <label class="visually-hidden" for="searchInput">Search products</label>
+      <input type="search" id="searchInput" placeholder="Search products..." autocomplete="off">
+    </section>
+
+    <nav class="categories" aria-label="Product categories">
+      <button class="chip active" type="button" data-category="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-category="automotive" aria-pressed="false">Automotive</button>
+      <button class="chip" type="button" data-category="electronics" aria-pressed="false">Electronics</button>
+      <button class="chip" type="button" data-category="health" aria-pressed="false">Health</button>
+      <button class="chip" type="button" data-category="home appliances" aria-pressed="false">Home Appliances</button>
+      <button class="chip" type="button" data-category="pets" aria-pressed="false">Pets</button>
+    </nav>
+
+    <p id="resultsStatus" class="results-status" aria-live="polite"></p>
+    <section class="products" id="productList" aria-label="Products"></section>
+  </main>
+
+  <footer>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="about.html">About Us</a>
+      <span aria-hidden="true">•</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+
+    <div class="affiliate-disclosure">
+      <span>We may earn from qualifying purchases<br>at no extra cost to you.</span>
+    </div>
+    
+    <p class="footer-copyright">© <span class="copyright-year"></span> Affiliate Store. All rights reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
